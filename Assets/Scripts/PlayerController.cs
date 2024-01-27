@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed = 10f;
+    [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float gravity = 9.8f;
     [SerializeField] private float rotationSpeed = 1000f;
 
