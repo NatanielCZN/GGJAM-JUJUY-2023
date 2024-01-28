@@ -526,8 +526,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMOD/gameJam_2024/gameJam_2024.fspro
-  sourceBankPath: ../FMOD/gameJam_2024/Build
+  sourceProjectPath: ../FMOD/gameJam_2024/Fmod_GGJ_Jujuy_2024/gameJam_2024.fspro
+  sourceBankPath: ../FMOD/gameJam_2024/Fmod_GGJ_Jujuy_2024/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -535,7 +535,7 @@ MonoBehaviour:
   BankLoadType: 1
   AutomaticSampleLoading: 1
   EncryptionKey: 
-  ImportType: 1
+  ImportType: 0
   TargetAssetPath: FMODBanks
   TargetBankFolder: 
   EventLinkage: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -1404522332
     Data4: 718167143
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,6 +27,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 390
+--- !u!114 &-8319925155358517210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/gameJam_2024/Fmod_GGJ_Jujuy_2024/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638420541744828240
+  FileSizes:
+  - Name: Desktop
+    Value: 13806112
+  Exists: 1
 --- !u!114 &-7220536551543404601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,7 +66,7 @@ MonoBehaviour:
     Data3: -1354708324
     Data4: 1197788935
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -54,6 +74,41 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1006
+--- !u!114 &-6761236340762243408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/NIVELES
+  m_EditorClassIdentifier: 
+  Name: NIVELES
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 3526671821
+    data2: 103050436
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - "MEN\xDA"
+  - CUENTA LA HISTORIA
+  - CIRCO 1
+  - BUSQUEDA DEL CONEJO
+  - CIRCO 2
+  - "CA\xD1ONES"
+  - CIRCO 3
+  - ANIMALES
+  - CIRCO 4
+  - ACROBATAS
+  - CIRCO 5 FINAL
+  Exists: 1
 --- !u!114 &-6218788084472753419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +128,7 @@ MonoBehaviour:
     Data3: -163164764
     Data4: 1062480683
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -124,7 +179,7 @@ MonoBehaviour:
     Data3: -85932871
     Data4: -22656402
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -151,7 +206,7 @@ MonoBehaviour:
     Data3: 1863335354
     Data4: -221920336
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -183,26 +238,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-996874190459965371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD/gameJam_2024/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638420489861246163
-  FileSizes:
-  - Name: Desktop
-    Value: 1352
-  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,8 +251,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -996874190459965371}
-  - {fileID: 4088042011763084680}
+  - {fileID: 3004442441600411302}
+  - {fileID: -8319925155358517210}
   EditorEvents:
   - {fileID: -6218788084472753419}
   - {fileID: 247681968462760552}
@@ -229,12 +264,13 @@ MonoBehaviour:
   - {fileID: 5083739871907628823}
   - {fileID: -8535458041556253985}
   - {fileID: -3307046587816862304}
+  - {fileID: 1177501246815784704}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   StringsBanks:
-  - {fileID: -996874190459965371}
-  cacheTime: 638420489861246163
+  - {fileID: 3004442441600411302}
+  cacheTime: 638420541747040230
   cacheVersion: 131616
 --- !u!114 &247681968462760552
 MonoBehaviour:
@@ -255,7 +291,7 @@ MonoBehaviour:
     Data3: 1448989861
     Data4: 1067698389
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -264,6 +300,55 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1177501246815784704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica
+  m_EditorClassIdentifier: 
+  Path: event:/Musica
+  Guid:
+    Data1: 1490034585
+    Data2: 1113487703
+    Data3: -1288614240
+    Data4: 357475087
+  Banks:
+  - {fileID: -8319925155358517210}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6761236340762243408}
+  - {fileID: 4810478400626151707}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 974000
+--- !u!114 &3004442441600411302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/gameJam_2024/Fmod_GGJ_Jujuy_2024/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638420541747040230
+  FileSizes:
+  - Name: Desktop
+    Value: 1478
+  Exists: 1
 --- !u!114 &3888558362730097528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +368,7 @@ MonoBehaviour:
     Data3: 1789875366
     Data4: -804608922
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -291,26 +376,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
---- !u!114 &4088042011763084680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../FMOD/gameJam_2024/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638420489861216165
-  FileSizes:
-  - Name: Desktop
-    Value: 4182592
-  Exists: 1
 --- !u!114 &4755961452770831505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +395,7 @@ MonoBehaviour:
     Data3: 158452665
     Data4: 1717354810
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -339,6 +404,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &4810478400626151707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/victoria
+  m_EditorClassIdentifier: 
+  Name: victoria
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 367488115
+    data2: 511300722
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - jugando
+  - victoria
+  Exists: 1
 --- !u!114 &5083739871907628823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +449,7 @@ MonoBehaviour:
     Data3: -1654592365
     Data4: -1747440953
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -386,7 +477,7 @@ MonoBehaviour:
     Data3: 595441040
     Data4: -1959239268
   Banks:
-  - {fileID: 4088042011763084680}
+  - {fileID: -8319925155358517210}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
