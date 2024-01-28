@@ -17,9 +17,12 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController characterController;
 
+    FMODUnity.StudioEventEmitter emisorPasos;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        emisorPasos = GameObject.Find("s_pasos").GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     private void Update()
@@ -52,6 +55,11 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
         }
 
+        if (Input.GetAxis("Horizontal")!= 0 || Input.GetAxis("Vertical") != 0)
+        {
+            if(!emisorPasos.IsPlaying())emisorPasos.Play();
+        } else {emisorPasos.Stop();}
+
         characterController.Move(movement);
     }
 
@@ -62,5 +70,11 @@ public class PlayerController : MonoBehaviour
         transform.position = checkPoint.transform.position;
 
         characterController.enabled = true;
+    }
+    private void OnTriggerStay(Collider other) {
+        if (other.tag == "sueloMadera")
+        {
+            emisorPasos.EventInstance.setParameterByName("tipoPasos",1);
+        }
     }
 }

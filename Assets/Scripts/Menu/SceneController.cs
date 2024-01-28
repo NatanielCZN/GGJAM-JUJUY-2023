@@ -9,7 +9,8 @@ public class SceneController : MonoBehaviour
 {
     public string escenaJuego;
     public string escenaCreditos;
-
+    FMODUnity.StudioEventEmitter boton;
+    
     // Método que se llama cuando se presiona el boton en el Canvas
     public void OnBotonPressPlay()
     {

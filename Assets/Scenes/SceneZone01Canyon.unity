@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028656, g: 0.22571698, b: 0.30692577, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028627, g: 0.22571671, b: 0.30692542, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -964,6 +964,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5720791959552239430, guid: a2c9982a5886df14098e8c42fd3d463c, type: 3}
   m_PrefabInstance: {fileID: 917119404}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &124723166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124723167}
+  m_Layer: 0
+  m_Name: SonidosJugador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124723167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124723166}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2081399035}
+  m_Father: {fileID: 543450653521990306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &128383223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3224,6 +3256,7 @@ GameObject:
   - component: {fileID: 644460034}
   - component: {fileID: 644460033}
   - component: {fileID: 644460032}
+  - component: {fileID: 644460035}
   m_Layer: 0
   m_Name: Image01 (5)
   m_TagString: Untagged
@@ -3333,6 +3366,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &644460035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644460030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 1
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &648080215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3410,6 +3476,7 @@ GameObject:
   - component: {fileID: 661547932}
   - component: {fileID: 661547931}
   - component: {fileID: 661547930}
+  - component: {fileID: 661547933}
   m_Layer: 0
   m_Name: ImageHistoria03 (1)
   m_TagString: Untagged
@@ -3519,6 +3586,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &661547933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661547928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1985884263
+      Data2: 1288390790
+      Data3: 1789875366
+      Data4: -804608922
+    Path: event:/SFX_Conejo
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &687138533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,6 +3629,7 @@ GameObject:
   - component: {fileID: 687138537}
   - component: {fileID: 687138536}
   - component: {fileID: 687138535}
+  - component: {fileID: 687138538}
   m_Layer: 0
   m_Name: Image01 (1)
   m_TagString: Untagged
@@ -3640,6 +3739,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &687138538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687138533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &688731328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3712,6 +3844,38 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1125799360}
   m_SourcePrefab: {fileID: 100100000, guid: 54c1d4f118f1ff94e92d4f0574099687, type: 3}
+--- !u!1 &692603998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692603999}
+  m_Layer: 0
+  m_Name: Sonido2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692603999
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692603998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -57.35093, y: 12.621885, z: 48.515846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1032749465}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &698711340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5128,6 +5292,7 @@ GameObject:
   - component: {fileID: 873188492}
   - component: {fileID: 873188491}
   - component: {fileID: 873188490}
+  - component: {fileID: 873188493}
   m_Layer: 0
   m_Name: Image01 (4)
   m_TagString: Untagged
@@ -5237,6 +5402,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &873188493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873188488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &903910912
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,6 +6323,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 018b8e83071f4b44b948c4398c9fc46d, type: 3}
   m_PrefabInstance: {fileID: 585660588}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1032749464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032749465}
+  - component: {fileID: 1032749466}
+  m_Layer: 0
+  m_Name: SonidoAmbiente
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032749465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032749464}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 692603999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032749466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032749464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1466404763
+      Data2: 1195330327
+      Data3: -163164764
+      Data4: 1062480683
+    Path: event:/SFX_Ambiente
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1038053748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eac225bedea48a44f8f3bfd2111ced6e, type: 3}
@@ -6140,8 +6401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1040178812}
   - component: {fileID: 1040178811}
-  - component: {fileID: 1040178810}
   - component: {fileID: 1040178813}
+  - component: {fileID: 1040178814}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6149,14 +6410,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1040178810
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1040178809}
-  m_Enabled: 1
 --- !u!20 &1040178811
 Camera:
   m_ObjectHideFlags: 0
@@ -6236,6 +6489,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 543450653521990306}
+--- !u!114 &1040178814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040178809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 1801142624}
 --- !u!4 &1061233270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c65d87e0b70a144f80c05e4107fe94d, type: 3}
@@ -6337,6 +6603,7 @@ GameObject:
   - component: {fileID: 1111080160}
   - component: {fileID: 1111080159}
   - component: {fileID: 1111080162}
+  - component: {fileID: 1111080163}
   m_Layer: 0
   m_Name: Image01
   m_TagString: Untagged
@@ -6446,6 +6713,39 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 6
   m_Center: {x: 2, y: -2, z: 0}
+--- !u!114 &1111080163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111080158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1118241451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c65d87e0b70a144f80c05e4107fe94d, type: 3}
@@ -7465,6 +7765,7 @@ GameObject:
   - component: {fileID: 1283424858}
   - component: {fileID: 1283424857}
   - component: {fileID: 1283424861}
+  - component: {fileID: 1283424862}
   m_Layer: 0
   m_Name: Fuego
   m_TagString: Untagged
@@ -7570,6 +7871,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d49467eb4c2d24aacb5bbb5beb5ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1283424862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283424856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 193152665
+      Data2: 1193530829
+      Data3: 1863335354
+      Data4: -221920336
+    Path: event:/SFX_Llamarada
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1315437213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9931,6 +10263,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2432d9fc9cba27e4b86c2e60eabc56b0, type: 3}
+--- !u!1 &1801142624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6906670180094175984, guid: 9b1396bcc33d5e140b628bc8d20baeb3, type: 3}
+  m_PrefabInstance: {fileID: 5556195644436212212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1802077082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10175,6 +10512,7 @@ GameObject:
   - component: {fileID: 1840482131}
   - component: {fileID: 1840482130}
   - component: {fileID: 1840482129}
+  - component: {fileID: 1840482132}
   m_Layer: 0
   m_Name: Image01 (3)
   m_TagString: Untagged
@@ -10284,6 +10622,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1840482132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840482127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1843897202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10472,6 +10843,7 @@ GameObject:
   - component: {fileID: 1865229440}
   - component: {fileID: 1865229439}
   - component: {fileID: 1865229438}
+  - component: {fileID: 1865229441}
   m_Layer: 0
   m_Name: ImageHistoria03
   m_TagString: Untagged
@@ -10581,6 +10953,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1865229441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865229436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1985884263
+      Data2: 1288390790
+      Data3: 1789875366
+      Data4: -804608922
+    Path: event:/SFX_Conejo
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1873226536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10829,6 +11232,7 @@ GameObject:
   - component: {fileID: 1952644942}
   - component: {fileID: 1952644941}
   - component: {fileID: 1952644940}
+  - component: {fileID: 1952644943}
   m_Layer: 0
   m_Name: Image01 (2)
   m_TagString: Untagged
@@ -10938,6 +11342,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1952644943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952644938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 949976944
+      Data2: 1267246867
+      Data3: 158452665
+      Data4: 1717354810
+    Path: event:/SFX_Foto
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: fotografia
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1967528271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11338,6 +11775,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6c65d87e0b70a144f80c05e4107fe94d, type: 3}
   m_PrefabInstance: {fileID: 295202586}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2081399034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081399035}
+  - component: {fileID: 2081399036}
+  m_Layer: 0
+  m_Name: s_pasos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081399035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081399034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 124723167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081399036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081399034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1672610950
+      Data2: 1128097377
+      Data3: -1654592365
+      Data4: -1747440953
+    Path: event:/SFX_Player_Pasos
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: tipoPasos
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2086609552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12681,7 +13183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753561392612987644, guid: 9b1396bcc33d5e140b628bc8d20baeb3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 1753561392612987644, guid: 9b1396bcc33d5e140b628bc8d20baeb3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12757,7 +13259,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1753561392612987644, guid: 9b1396bcc33d5e140b628bc8d20baeb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 124723167}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b1396bcc33d5e140b628bc8d20baeb3, type: 3}
 --- !u!4 &5589346354651416444
@@ -13240,3 +13745,4 @@ SceneRoots:
   - {fileID: 420275869}
   - {fileID: 757815351}
   - {fileID: 1221619023}
+  - {fileID: 692603999}
