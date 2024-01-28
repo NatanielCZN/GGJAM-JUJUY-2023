@@ -27,8 +27,8 @@ public class MovementLanzallamas : MonoBehaviour
             isClockwise = !isClockwise;
         }
 
-        if (isClockwise) transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        if (isClockwise) transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
         
-        else transform.Rotate(Vector3.down, rotationSpeed * Time.deltaTime);
+        else transform.Rotate(Vector3.back, rotationSpeed * Time.deltaTime);
     }
 }
