@@ -10,6 +10,7 @@ public class MovementLanzallamas : MonoBehaviour
 
     private float timer;
     private bool isActive = true;
+    private bool isClockwise = true;
 
     void Update()
     {
@@ -22,8 +23,12 @@ public class MovementLanzallamas : MonoBehaviour
             objectToToggle.SetActive(isActive);
 
             timer = 0f;
+
+            isClockwise = !isClockwise;
         }
 
-        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        if (isClockwise) transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
+        
+        else transform.Rotate(Vector3.down, rotationSpeed * Time.deltaTime);
     }
 }
