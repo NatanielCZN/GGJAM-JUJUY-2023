@@ -8,6 +8,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float movementSpeed = 7f;
     [SerializeField] private float gravity = 9.8f;
     [SerializeField] private float rotationSpeed = 1000f;
+    [SerializeField] private GameObject checkPoint;
+    public GameObject CheckPoint
+    {
+        get { return checkPoint; }
+        set { checkPoint = value; }
+    }
 
     private CharacterController characterController;
 
@@ -47,5 +53,14 @@ public class PlayerController : MonoBehaviour
         }
 
         characterController.Move(movement);
+    }
+
+    public void TeleportTo()
+    {
+        characterController.enabled = false;
+
+        transform.position = checkPoint.transform.position;
+
+        characterController.enabled = true;
     }
 }
